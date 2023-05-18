@@ -1,0 +1,24 @@
+---
+import Section from './SectionTemplate.astro';
+---
+
+<Section title="Model S" color="black">
+  <p slot="subtitle" class="text-sm underline">Programe una consulta virtual</p>
+  <div slot="footer" class="flex gap-x-6 mx-auto">
+    <a
+      class="text-white text-sm border-[3px] border-gray-800 bg-gray-800 rounded font-medium px-12 py-2 inline-block hover:bg-gray-700 hover:border-gray-700 transition-colors"
+      href="#">Pedido Personalizado</a
+    >
+    <a
+      class="text-sm border-[3px] border-white bg-white rounded font-medium px-12 py-2 inline-block hover:bg-black hover:text-white hover:border-black transition-colors"
+      href="#">Saber más</a
+    >
+  </div>
+
+  <img
+    slot="background"
+    alt="Model S"
+    class="h-full w-full object-cover object-center"
+    src="model-s.avif"
+  />
+</Section>
