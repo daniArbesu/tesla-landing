@@ -2,10 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Tesla - Daniel Arbesú">
   <main>
     <header
-      class="py-2 px-10 flex items-center fixed top-0 w-full justify-between z-10 text-white"
+      class="py-2 px-10 flex items-center fixed top-0 w-full justify-between z-30 text-white"
     >
       <div class="flex flex-grow basis-0">
         <svg
@@ -41,13 +41,29 @@ import Layout from '../layouts/Layout.astro';
       </nav>
     </header>
 
-    <section
-      class="bg-black h-screen w-screen text-center relative overflow-hidden"
-    >
-      <h2>Disfrute de Tesla</h2>
-      <p>Programe una prueba de conducción hoy mismo</p>
-      <a href="">Prueba de conducción</a>
-      <video src="/heroVideo.webm"></video>
+    <section class="h-screen w-screen text-center overflow-hidden">
+      <div class="z-30 relative flex flex-col h-full">
+        <header class="text-white">
+          <h2 class="pt-36 text-[40px] font-medium">Disfrute de Tesla</h2>
+          <p class="text-sm">Programe una prueba de conducción hoy mismo</p>
+        </header>
+        <footer class="flex flex-col flex-grow flex-nowrap justify-end pb-20">
+          <div>
+            <a
+              class="text-white text-sm border-[3px] border-white backdrop-blur-md rounded font-medium px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+              href="#">Prueba de conducción</a
+            >
+          </div>
+        </footer>
+      </div>
+      <div class="absolute top-0 bottom-0">
+        <video
+          class="object-cover h-full w-full"
+          autoplay
+          muted
+          loop
+          src="/heroVideo.webm"></video>
+      </div>
     </section>
   </main>
 </Layout>
