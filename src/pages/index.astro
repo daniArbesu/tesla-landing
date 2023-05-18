@@ -1,7 +1,7 @@
 ---
-import CarSection from '../components/CarSection.astro';
 import HeroSection from '../components/HeroSection.astro';
 import Navbar from '../components/Navbar.astro';
+import Section from '../components/Section.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -14,16 +14,40 @@ import Layout from '../layouts/Layout.astro';
       <HeroSection />
     </div>
     <div class="snap-center">
-      <CarSection />
+      <Section
+        title="Model Y"
+        subtitle="Concertar una prueba de conducción"
+        imgSrc="/model-y.avif"
+        btnLeftText="Explorar Inventario"
+        btnRightText="Pedido Personalizado"
+      />
     </div>
     <div class="snap-center">
-      <HeroSection />
+      <Section
+        title="Model 3"
+        subtitle="Concertar una prueba de conducción"
+        imgSrc="/model-3.avif"
+        btnLeftText="Explorar Inventario"
+        btnRightText="Pedido Personalizado"
+      />
     </div>
     <div class="snap-center">
-      <CarSection />
+      <Section
+        title="Model S"
+        subtitle="Programe una consulta virtual"
+        imgSrc="/model-s.avif"
+        btnLeftText="Pedido Personalizado"
+        btnRightText="Saber más"
+      />
     </div>
     <div class="snap-center">
-      <HeroSection />
+      <Section
+        title="Model X"
+        subtitle="Programe una consulta virtual"
+        imgSrc="/model-x.avif"
+        btnLeftText="Pedido Personalizado"
+        btnRightText="Saber más"
+      />
     </div>
   </main>
 </Layout>
