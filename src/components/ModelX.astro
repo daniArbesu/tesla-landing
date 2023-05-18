@@ -3,8 +3,16 @@ import Section from './SectionTemplate.astro';
 ---
 
 <Section title="Model X" color="black" id="model-x">
-  <p slot="subtitle" class="text-sm underline">Programe una consulta virtual</p>
-  <div slot="footer" class="flex gap-x-6 mx-auto">
+  <a
+    href="#"
+    slot="subtitle"
+    class="text-sm underline underline-offset-4 hover:decoration-2 transition ease-in-out delay-150 duration-300"
+    >Programe una consulta virtual</a
+  >
+  <div
+    slot="footer"
+    class="flex sm:w-[550px] sm:gap-x-6 mx-auto flex-col sm:flex-row gap-4 w-full"
+  >
     <a
       class="text-white text-sm border-[3px] border-gray-800 bg-gray-800 rounded font-medium px-12 py-2 inline-block hover:bg-gray-700 hover:border-gray-700 transition-colors"
       href="#">Pedido Personalizado</a

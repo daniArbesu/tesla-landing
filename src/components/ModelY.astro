@@ -3,9 +3,13 @@ import Section from './SectionTemplate.astro';
 ---
 
 <Section title="Model Y" color="black" id="model-y">
-  <p slot="subtitle" class="text-sm underline">
+  <a
+    href="#"
+    slot="subtitle"
+    class="text-sm underline underline-offset-4 hover:decoration-2 transition ease-in-out delay-150 duration-300"
+  >
     Concertar una prueba de conducción
-  </p>
+  </a>
   <div
     slot="footer"
     class="flex sm:w-[550px] sm:gap-x-6 mx-auto flex-col sm:flex-row gap-4 w-full"
