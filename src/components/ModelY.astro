@@ -6,13 +6,16 @@ import Section from './SectionTemplate.astro';
   <p slot="subtitle" class="text-sm underline">
     Concertar una prueba de conducción
   </p>
-  <div slot="footer" class="flex gap-x-6 mx-auto">
+  <div
+    slot="footer"
+    class="flex sm:w-[550px] sm:gap-x-6 mx-auto flex-col sm:flex-row gap-4 w-full"
+  >
     <a
-      class="text-white text-sm border-[3px] border-gray-800 bg-gray-800 rounded font-medium px-12 py-2 inline-block hover:bg-gray-700 hover:border-gray-700 transition-colors"
+      class="w-full text-white text-sm border-4 border-gray-800 bg-gray-800 rounded font-medium px-2 py-2 inline-block hover:bg-gray-700 hover:border-gray-700 transition-colors"
       href="#">Explorar inventario</a
     >
     <a
-      class="text-sm border-[3px] border-white bg-white rounded font-medium px-12 py-2 inline-block hover:bg-black hover:text-white hover:border-black transition-colors"
+      class="w-full text-sm border-[3px] border-white bg-white rounded font-medium px-2 py-2 inline-block hover:bg-black hover:text-white hover:border-black transition-colors"
       href="#">Pedido personalizado</a
     >
   </div>
